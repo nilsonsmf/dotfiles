@@ -17,8 +17,5 @@ echo | echo | vim +PluginInstall +qall &>/dev/null
 
 # create symbolic links for all execs
 test -d "$HOME/.local/bin" || mkdir -p "$HOME/.local/bin"
-for exec in $DIR/exec/*; do
-    ln -s -f $exec $HOME/.local/bin/$(basename $exec)
-done
 
 sed -i "4s?.*?export SCRITPS_INSTALL=$DIR\/scripts?" $DIR/scripts/env
