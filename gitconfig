@@ -25,9 +25,6 @@
     ui = auto
 [http]
     sslVerify = no
-[user]
-    name = Harmish Khambhaita
-    email = hkhambhaita@anybotics.com
 [push]
     default = nothing
 [mergetool]
